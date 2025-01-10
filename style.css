@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    overflow-x:hidden;
+    font-family: poppins;
+}
+
+
+body{
+    background-color: #333;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: yellow; */
+    width: 100%;
+}
+header nav{
+    display: flex;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+nav ul li{
+    padding: 10px;
+}
+/* la mise en page de la partie principale du prortfolio */
+.banner{
+    /* background-color: #a40000b1; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    /* justify-content: space-between; */
+}
+.banner .text-banner{
+    margin: 100px;
+    width: 500px;
+}
+.text-banner .introduction{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.introduction .introduc{
+    color: #fff;
+    font-weight: bold;
+}
+.introduc h2{
+    font-size: 4rem;
+}
+.introduc span{
+    color: aqua;
+}
+.banner img{
+    width: 700px;
+}
+.service{
+    /* background-color: yellow; */
+    padding: 30px;
+}
+.service p.tittle, .recent-travail p, .temoiniages p.p{
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+.service h2, .recent-travail h2, .temoiniages h2{
+    font-weight: bold;
+    text-align: center;
+}
+.services{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 30px;
+    justify-content: center;
+}
+.services-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #424141;
+    width: 400px;
+    height: 250px;
+    box-shadow: 0  0  10px rgba(24, 24, 22, 0.4);
+    border-radius: 2px;
+    padding: 15px;
+}
+.form, .contact{
+    box-shadow: 0  0  10px rgba(24, 24, 22, 0.4);
+}
+.service img{
+    width: 70px;
+    color: red;
+}
+.recent-travail{
+    padding: 30px;
+/* background-color: gray; */
+
+}
+.recent {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.recent img{
+    width: 300px;
+    border-radius: 2px;
+    box-shadow: 0  0  10px rgba(24, 24, 22, 0.4);
+}
+.recent-travail button{
+    display: block;
+    align-self: center;
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    margin: auto;
+    margin-top: 20px;
+}
+.temoiniages{
+    padding: 50px;
+}
+.temoiniage{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 350px) ;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.temoiniage-item{
+    display: flex;
+    flex-direction: column;
+    background-color: #3c3a3a;
+    padding: 20px;
+    border-radius: 15px;
+    gap: 10px;
+}
+.temoiniage-item img{
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+}
+.temoin{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+    shape-margin: 20px;
+}
+.clients{
+    /* display: grid; */
+    grid-template-columns: repeat(4, 200px);
+}
+.clients-logo{
+    padding: 30px;
+    width: 200px;
+    background-color: #fefafaa3;
+    height: 50px;
+    font-weight: 900;
+    /* gap: ; */
+}
+.clients-logo span{
+    display: block;
+    align-items: center;
+}
+
+.contact{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.form form{
+display: flex;
+flex-direction: column;
+gap: 10px;
+color: #000;
+}
+.nom{
+    display: flex;
+    gap: 10px;
+}
+input{
+    padding: 10px;
+    border-radius: 4px;
+    color: #000;
+}
+form button{
+    width: 100px;
+    /* color: #000; */
+    margin: auto;
+    background-color: rgb(34, 34, 218);
+    border: none;
+    padding: 5px;
+}
+form textarea{
+    height: 100px;
+    border-radius: 4px;
+    border: none;
+    color: #000;
+}
+.informations{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    align-items: center;
+}
+.info-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 400px;
+    box-shadow: 0 0  10px rgb(63, 63, 63);
+    border:1px solid #000;
+    padding: 10px;
+    border-radius: 15px;
+}
+/*  La partie about */
+
+.aboute{
+    padding: 50px;
+}
+.aboute .abouteItem{
+    display: flex;
+    justify-content: space-between;
+}
+.abouteItem h3{
+    color: red;
+}
+
+.aboute .p, table{
+    margin-top: 50px;
+    font-style: bold;
+    margin-bottom: 30px;
+}
+.aboute table td{
+    width: 200px;
+    padding: 10px;
+}
+.aboute button{
+    padding: 10px;
+    color: black;
+    border-radius: 25px;
+    outline: none;
+    border: 1px solid black;
+    width: 200px;
+    background-color: red;
+}
+
+
+.aboute .action{
+    display: flex;
+    gap: 30px;
+}
+
+
+/* Le footer */
+footer
+{
+    text-align: center;
+    padding: 10px;
+}
+.separator{
+    height: 2px;
+    border: 1px solid black;
+}
+.icons-footer{
+    padding: 10px;
+}
+.bi-star{
+    color: red;
+}
+.bi-quote {
+    color: red;
+}
+.social-icons{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-form{
+    width: 200px;
+    color: black;
+    background-color: red;
+}
+.bi-phone, .bi-laptop, .bi-palette{
+   font-size: 80px;
+   color: red;
+}
+
+
+  .service_item{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px
+  }
+  .service_ button{
+    background-color: red;
+    padding:10px;
+    border-radius: 25px;
+    outline: none;
+    border: 1px solid #000;
+    margin-top: 30px;
+  }
+  .service_content{
+    padding: 10px;
+  }
+  .service_item p{
+    width: 800px;
+    margin-top: 30px;
+  }
+  .service_ img{
+    width: 400px;
+  }
+  .monNom {
+    content: attr(data-txt);
+    color: aqua;
+    -webkit-text-stroke:0vw #383d52 ;
+    border-right:2px solid red;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+  }
+
+  @keyframes animate{
+    0%, 10%, 100%{
+        width: 0;
+    }
+    70%,90%{
+       width:  100%;
+    }
+  }
+  header li:hover{
+    background-color: red;
+  }
