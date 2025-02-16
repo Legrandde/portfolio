@@ -20,7 +20,9 @@ header{
     align-items: center;
     justify-content: space-evenly;
     /* background-color: yellow; */
+    background-color: #3333336e;
     width: 100%;
+    position: fixed;
 }
 header nav{
     display: flex;
@@ -108,6 +110,52 @@ nav ul li{
 /* background-color: gray; */
 
 }
+.recent-work{
+    
+    background-size: cover;
+    border-radius: 5px;
+    height: 200px;
+    position: relative;
+    overflow-y: hidden;
+}
+.recent .recent-work:nth-child(1){
+    background-image: url("images/first1 copie.png");
+}
+.recent-work:nth-child(2){
+    background-image: url("images/Capture\ d\'écran\ 2024-04-01\ 100959.png");
+}
+.recent-work:nth-child(3){
+    background-image: url("images/certifier.png");
+}
+
+
+.recent-work p{
+    position: absolute;
+    bottom: -100px;
+    border-radius: 5px;
+    font-size: 10px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.633), rgba(255, 0, 0, 0.496)  );
+    text-align: center;
+    padding: 10px;
+    /* display: none; */
+    transition: .5s ease-in-out ;
+    transition-duration: 1s;
+}
+.recent-work:hover p{
+    
+    bottom: 0;
+    transition: .5s ease-in-out ;
+    transition-duration: 1s;
+    text-align: center;
+
+}
+.recent-work p{
+    color: #fff;
+}
+a.recent-work{
+    overflow: hidden;
+}
+
 .recent {
     display: grid;
     grid-template-columns: repeat(3, 400px);
@@ -197,8 +245,10 @@ color: #000;
 }
 input{
     padding: 10px;
-    border-radius: 4px;
+    border-radius: 25px;
     color: #000;
+    /* background-color: none; */
+    color-scheme: red;
 }
 form button{
     width: 100px;
@@ -226,11 +276,21 @@ form textarea{
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    width: 400px;
+    width: 250px;
     box-shadow: 0 0  10px rgb(63, 63, 63);
     border:1px solid #000;
-    padding: 10px;
+    text-wrap: wrap;
+    padding: 20px;
     border-radius: 15px;
+    font-size: 10px;
+    color: #dbd7d7;
+}
+.info-item p{
+    text-align: start;
+}
+.info-item i{
+    font-size: 2rem;
+    color: red;
 }
 /*  La partie about */
 
@@ -276,12 +336,20 @@ footer
 {
     text-align: center;
     padding: 10px;
+    background-color: #434040;
+    margin-top: 30px;
 }
 .separator{
     height: 2px;
-    border: 1px solid black;
+    border: 1px solid rgb(31, 31, 31);
 }
 .icons-footer{
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+footer h3{
     padding: 10px;
 }
 .bi-star{
@@ -294,10 +362,27 @@ footer
     display: flex;
     justify-content: space-between;
 }
+.icons-footer i{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+/* Mise en forme du formulaire de contact */
 .btn-form{
     width: 200px;
     color: black;
     background-color: red;
+    font-weight: bold;
+    border: 2px solid red;
+    cursor: pointer;
+    
+}
+.btn-form:hover{
+    background-color: transparent;
+    color: white;
+    border:2px solid red ;
+    transition: ease-in-out;
 }
 .bi-phone, .bi-laptop, .bi-palette{
    font-size: 80px;
@@ -327,6 +412,7 @@ footer
   }
   .service_ img{
     width: 400px;
+    object-fit: contain;
   }
   .monNom {
     content: attr(data-txt);
@@ -345,6 +431,177 @@ footer
        width:  100%;
     }
   }
+  .abouteItem img{
+    object-fit: cover;
+  }
   header li:hover{
     background-color: red;
   }
+  .maitrise img{
+    width: 50px;
+  }
+  .maitrise .maitrise-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .social-networks{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .social-networks i{
+    font-size: 2rem;
+  }
+  .social-networks i:nth-child(1):hover, i:nth-child(2):hover{
+    color: blue;
+    transition:ease-in-out 0.3s;
+  }
+  .social-networks i:nth-child(4):hover{
+    color: red;
+  }
+  #btn-cv{
+    background-color: #333;
+    border: 2px solid red;
+    color:#fff ;
+    font-weight: bold;
+    transition: 0.5s ease-in-out ;
+  }
+  #btn-cv:hover{
+    background-color: red;
+    border: 2px solid #000;
+    color:#000 ;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+  }
+  #contact:hover{
+    background-color: #333;
+    border: 2px solid red;
+    color:#fff ;
+    font-weight: bold;
+    transition: 0.5s ease-in-out ;
+  }
+  #contact{
+    font-weight: bold;
+  }
+  
+#a{
+    background-image: url('images/Capture\ d\'écran\ 2024-04-04\ 233008.png');
+}
+#b{
+    background-image: url("images/Capture\ d\'écran\ 2024-04-01\ 100959.png");
+}
+#c{
+    background-image: url("images/Capture\ d\'écran\ 2024-09-12\ 135149.png");
+}
+#d{
+    background-image: url("images/Capture\ d\'écran\ 2024-09-28\ 231737.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#e{
+    background-image: url("images/fruits-legurmes.png");
+}
+
+
+
+/* Amelioration du portfoli  */
+
+/* Ici on commance par la section mes compétances  */
+
+
+.maitrise-box-row{
+    width: 100%;
+
+}
+.maitrise-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contenaire-progression{
+    width: 50%;
+    height: 20px;
+    background: #4e4c4c;
+    border-radius: 2px;
+    overflow-y: hidden;
+
+}
+.progresion{
+    
+    height: 20px;
+    background: red;
+    border-radius: 2px;
+    border-right: 2px solid white;
+    overflow-y: auto;
+    display: flex;
+    animation-name: progression;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+    justify-content: center;
+}
+
+.stats{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* Ajout d'une derniere section "parcours" pour y mettre mon parcours academique donc stylisation de cette partie */
+.parcours-box{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+#parcours{
+    padding: 20px;
+}
+.parcours-item{
+    background-color: #515151;
+    width: 600px;
+    display: block;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow:  0 0 10px rgb(59, 59, 59);
+}
+.parcours-item .date{
+    font-weight:900;
+    color: red;
+    font-size: 2rem;
+    padding: 6px;
+}
+.parcours-item .diplome{
+    font-size: 1.5rem;
+    padding: 6px;
+}
+.parcours-item .etablissement{
+    color: #ddd;
+    padding: 6px;
+    margin-top: 6px;
+    padding: 6px;
+}
+.text{
+    padding: 5px;
+    padding-bottom: 10px;
+}
+
+/* Animation de la bare progression  */
+
+@keyframes progression {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 80%;
+    }
+}

@@ -14,9 +14,13 @@
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="service.html">Services</a></li>
-                <li><a href="Parcours.html">Parcours</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#apropos">Apropos de moi</a></li>
+                <li><a href="#parcours">Mon Parcours</a></li>
+                <li><a href="#competances">Compétances</a></li>
+                <li><a href="#servicees">Services</a></li>
+                <li><a href="#realisations">Mes realisations</a></li>
+                <li><a href="#contact-moi">Contact</a></li>
+
             </ul>
             <div class="icons" id="icons"></div>
         </nav>
@@ -30,23 +34,29 @@
                         <h2 data-text="Alhassane Barry" class="monNom">Alhassane Barry</h2>
                         <p>Un developpeur full-stack</p>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nam delectus quasi, exercitationem pariatur harum, quo labore fugiat enim animi inventore consequatur beatae, amet laborum laboriosam cum aliquam repudiandae a.</p>
+                    <p style="color: #ddd;">etudiant en genie informatique a unipro egalement CEO de Barry Tech Solutions pationné par les technologies de l'information de communication je et fort d'une solide expérience dans le domaine de Developpement web, mobile et de la programmation informations, je vous aide a mettre en place votre projet web , vos logiciels ainsi que vos applications mobiles.</p>
                 </div>
-                <div class="social-networks"></div>
+                <div class="social-networks">
+                    <a href="https://www.facebook.com/profile.php?id=61556478706677" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/alhassane-barry-71116728b" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/legrandde" target="_blank"><i class="bi bi-github"></i></a>
+                    
+                    
+                </div>
             </div>
-            <div class="image">
-                <img src="images/Sans titre - 1.png" alt="Alhassane Barry">
+            <div class="image" data-aos="fade-left" data-aos-duration="1500">
+                <img src="images/Sans titre - 1.png" alt="Alhassane Barry" data-aos="fade-left" data-aos-duration="1500">
             </div>
         </section>
-        <section class="aboute">
+        <section class="aboute" id="apropos">
             <h2>A propos de moi</h2>
             <div class="abouteItem">
-                <img src="images/Sans titre - 1.png" alt="">
+                <img src="images/Sans titre - 1.png" alt="" data-aos="fade-up" data-aos-duration="1500">
                 <div class="content">
                     <h3>A propos de moi</h3>
                     <p class="p">Bonjour, je suis Alhassane Barry, je suis etudiant de 2eme année en génie informatique à l'univers professionnel de dekar</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum laudantium possimus doloremque, officia unde distinctio eaque perferendis obcaecati? Quos est qui, aperiam fugit laboriosam libero possimus! Nam id cum laboriosam?</p>
-                    <table>
+                    <p>Ci-dessous vous verrez mes informations professionnels</p>
+                    <table >
                         <tr>
                             <td>nom</td>
                             <td>Alhassane Barry</td>
@@ -69,70 +79,257 @@
                         </tr>
                         <tr>
                             <td>Compétances</td>
-                            <td><span>html/css </span></td>
+                            <td><span>Developpement full-stack et Machine learning</span></td>
                         </tr>
                     </table>
                     <div class="action">
-                        <button>Contacter</button>
-                        <button>Voir le CV</button>
+                        <button id="contact">Contacter</button>
+                        <button id="btn-cv">
+                            <a href="./images/cv.pdf" print>Telecharger le cv</a>
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="service">
-            <p class="tittle">Services</p>
-            <h2>Qu'est ce que je fais?</h2>
+
+        <section class="parcours" id="parcours">
+            <h2 style="text-align: center ; color:red">Parcours academeique</h2>
+            <marquee behavior="scroll-up" direction="top">
+                <div class="parcours-box">
+                    <div class="parcours-item">
+                        <p class="date">2022-2023</p>
+                        <p class="diplome">Baccaloreah unique sciences experimentales </p>
+                        <p class="etablissement">GS Tely Diallo</p>
+                        <p class="text">En 2023 j'ai obtenu mon Baccaloreah scientifique en sciences expérimentale en republique de guinée au GS Tely Diallo</p>
+                    </div>
+                    <div class="parcours-item">
+                        <p class="date">2023-2024</p>
+                        <p class="diplome">Licence 1 Génie informatique</p>
+                        <p class="etablissement">Univers professionnel</p>
+                        <p class="text">Licence 1 en genie informatique a unipro</p>
+                    </div>
+                    <div class="parcours-item">
+                        <p class="date">2024-2025</p>
+                        <p class="diplome">Licence 2 Génie informatique</p>
+                        <p class="etablissement">Univers professionnel</p>
+                        <p class="text">Licence 2 en genie informatique a unipro </p>
+                    </div>
+                </div>
+            </marquee>
+            
+        </section>
+
+        <section class="maitrise" id="competances">
+            <h2 style="text-align: center; color: red;">Mes connaissances</h2>
+            <div class="maitrise-box">
+                <div class="maitrise-box-row">
+                    <div class="maitrise-item" >
+                        <img src="images/python.png" alt="">
+                        <div class="contenaire-progression">
+                            <div class="progresion" style="width: 80%; ">
+                                <span class="stats">80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maitrise-item" >
+                        <img src="images/java.png" alt="">
+                        <div class="contenaire-progression">
+                            <div class="progresion" style="width: 70%; ">
+                                <span class="stats">70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maitrise-item" >
+                        <img src="images/git bash.png" alt="">
+                        <div class="contenaire-progression">
+                            <div class="progresion" style="width: 50%; ">
+                                <span class="stats">50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maitrise-item" >
+                        <img src="images/woocommer.png" alt="">
+                        <div class="contenaire-progression">
+                            <div class="progresion" style="width: 75%; ">
+                                <span class="stats">75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maitrise-item" >
+                        <img src="images/wordpress.png" alt="">
+                        <div class="contenaire-progression">
+                            <div class="progresion" style="width: 90%; ">
+                                <span class="stats">90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maitrise-item" >
+                        <img src="images/html.png" alt="">
+                        <div class="contenaire-progression">
+                            <div class="progresion" style="width: 80%; ">
+                                <span class="stats">95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maitrise-item" >
+                        <img src="images/pngwing.com.png" alt="">
+                        <div class="contenaire-progression">
+                            <div class="progresion" style="width: 90%; ">
+                                <span class="stats">90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maitrise-item" >
+                        <img src="images/reactjs.png" alt="">
+                        <div class="contenaire-progression">
+                            <div class="progresion" style="width: 30%; ">
+                                <span class="stats">30%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="maitrise-box-row">
+                    <div class="maitrise-item" >
+                        <img src="images/javascrip.png" alt="">
+                        <div class="contenaire-progression">
+                            <div class="progresion" style="width: 65%; ">
+                                <span class="stats">65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maitrise-item" >
+                        <img src="images/php.png" alt="">
+                        <div class="contenaire-progression">
+                            <div class="progresion" style="width: 40%; ">
+                                <span class="stats">40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maitrise-item" >
+                        <img src="images/django.png" alt="">
+                        <div class="contenaire-progression">
+                            <div class="progresion" style="width: 20%; ">
+                                <span class="stats">20%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maitrise-item" >
+                        <img src="images/Elelentor.png" alt="">
+                        <div class="contenaire-progression">
+                            <div class="progresion" style="width: 80%; ">
+                                <span class="stats">80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maitrise-item" >
+                        <img src="images/sql.png" alt="">
+                        <div class="contenaire-progression">
+                            <div class="progresion" style="width: 70%; ">
+                                <span class="stats">70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maitrise-item" >
+                        <img src="images/mysql.png" alt="">
+                        <div class="contenaire-progression">
+                            <div class="progresion" style="width: 65%; ">
+                                <span class="stats">65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maitrise-item" >
+                        <img src="images/C.png" alt="">
+                        <div class="contenaire-progression">
+                            <div class="progresion" style="width: 50%; ">
+                                <span class="stats">50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </section>
+        <section class="service" id="servicees">
+            <p class="tittle">Qu'est ce que je fais?</p>
+            <h2 id="">Services</h2>
             <div class="services">
                 <div class="services-item">
                     <i class="bi bi-laptop"></i>
-                    <h4>Design de site web</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, impedit. Quisquam corporis cumque aliquid eos!</p>
+                    <h4>Developpement web et mobile</h4>
+                    <p>Je vous aide a mettre  qu'a la maintenance</p>
                 </div>
                 <div class="services-item">
                     <i class="bi bi-palette"></i>
-                    <h4>Design de site web</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, impedit. Quisquam corporis cumque aliquid eos!</p>
+                    <h4>Creation digital et multimédia</h4>
+                    <p>Vous avez besoin de presenter vos produits, de passer un message ou d'attirer de la clientelle,on repond à vos besoins.</p>
                 </div>
                 <div class="services-item">
                     <i class="bi bi-phone"></i>
-                    <h4>Design de site web</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, impedit. Quisquam corporis cumque aliquid eos!</p>
+                    <h4>Marketing Digital</h4>
+                    <p>Vous souhaiter faire passer votre entreprise à l aidons à atteindre votre objection avec une solition digitale innovente</p>
                 </div>
             </div>
         </section>
-        <section class="recent-travail">
+        <section class="recent-travail" id="realisations">
             <p>Ce que j'ai fais</p>
-            <h2>Traveaux recents</h2>
+            <h2 id="traveaux">Traveaux recents</h2>
             <div class="recent">
-                <img src="images/first1 copie.png" alt="" class="recent-item">
-                <img src="images/Capture d'écran 2024-09-12 135149.png" alt="" class="recent-item">
-                <img src="images/first1 copie.png" alt="" class="recent-item">
-                <img src="images/Capture d'écran 2024-04-01 100959.png" alt="" class="recent-item">
-                <img src="images/Capture d'écran 2024-04-04 233008.png" alt="" class="recent-item">
-                <img src="images/Capture d'écran 2024-09-28 231737.png" alt="" class="recent-item">
+                <a href="#" class="a-recent">
+                    <div class="recent-work">
+                        <p>Creation digitale qui comme vous le vollez fais pas un message.Car comme disait l'artiste, un image peut dire mille mots</p>
+                    </div>
+                </a>
+                <a href="#" class="a-recent">
+                    <div class="recent-work" id="a">
+                        <p>
+                            boutique en ligne dans la quelle sont presenter das produits tels que des casques, de montre et des air-pods de toutes sorte
+                        </p>
+                    </div>
+                </a>
+                <a href=" https://legrandde.github.io/timbiShop/" class="a-recent" >
+                    <div class="recent-work" id="b">
+                        <p> boutique en ligne dans la quelle sont presenter das produits tels que des casques, de montre et des air-pods de toutes sorte</p>
+                    </div>
+                </a>
+                <a href="#" class="a-recent" >
+                    <div class="recent-work"id="c">
+                        <p>Agrovie est une plate-form E-commerce qui met en relation des cultivateurs du monde entier ainsi que des clients de part et d'autre de la planete developpent pour faciliter le travaille de agriculture car c'est primordiale pour l'humanité</p>
+                    </div>
+                </a>
+                <a target="_blank" href="https://legrandde.github.io/weather/" class="a-recent" >
+                    <div class="recent-work" id="d">
+                        <p>Application météo developpée en js avec l'api openweather permet d'avoir la meteo de n'importe quelle ville dans le monde à chaque instant</p>
+                    </div>
+                </a> 
+                <a href="http://localhost/wordpress/" class="a-recent">
+                    <div class="recent-work" id="e">
+                        <p>Boutique de vente en ligne de produits alimentaire telque les fruits et les legumes</p>
+                    </div>
+                </a>
             </div>
             
-            <button id="btn-projects">voir plus</button>
+        
             
         </section>
         <section class="temoiniages">
-            <p class="p">Témoiniages</p>
-            <h2>Ce que disent les clients de moi</h2>
+            <p class="p">Ce que disent les clients de moi</p>
+            <h2>Témoiniages</h2>
             <div class="temoiniage">
                 <div class="temoiniage-item">
                     <div class="social-icons">
                         <i class="bi bi-quote"></i>
                         <div class="start">
-                            <i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
                         </div>
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium soluta iure in voluptas ut nulla.
+                        Trailleur avec Alhassane Barry à été une experience extraordinaire, son sans de l'ecoute ainsi que son professionalisme  sont remarquable et la qualité du service est impécable ;)
                     </p>
                     <div class="temoin">
-                        <img src="images/Sans titre-1.png" alt="">
+                        <img src="images/first1 copie.png" alt="photo temoin">
                         <div>
-                            <h4>bamou</h4>
+                            <h4>Penil</h4>
                         <p>Ingenieur immobilié</p>
                         </div>
                     </div>
@@ -146,13 +343,13 @@
                         </div>
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium soluta iure in voluptas ut nulla.
+                       J'ai fait connaissance avec Alhassane Barry sur Linkedin tout de suit sur la base de sont profile j'ai pris contact et je dois dire je suis plus que satisfait. Car tourver de nos jours un tel professionalisme est tres difficile et que dire de la qualité du service rendu, elle est exceptionnelle.
                     </p>
                     <div class="temoin">
-                        <img src="images/Sans titre-1.png" alt="">
+                        <img src="images/first1 copie.png" alt="">
                         <div>
                             <h4>bamou</h4>
-                        <p>Ingenieur immobilié</p>
+                        <p>CEO de bamouè's Enterprise</p>
                         </div>
                     </div>
                     
@@ -165,10 +362,10 @@
                         </div>
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium soluta iure in voluptas ut nulla.
+                        Je Conseille vivement
                     </p>
                     <div class="temoin">
-                        <img src="images/Sans titre-1.png" alt="">
+                        <img src="images/first1 copie.png" alt="">
                         <div>
                             <h4>bamou</h4>
                         <p>Ingenieur immobilié</p>
@@ -186,19 +383,20 @@
                 <span>lorem</span>
             </div>
         </section> -->
-        <section class="contact">
+        <h1 style="text-align: center;">Me contacter</h1>
+        <section class="contact" id="contact-moi">
             <div class="informations">
                 <div class="info-item">
-                    <i class="bi bi-phone"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <i class="bi bi-telephone"></i>
+                    <p>+221 77 487 40 73</p>
                 </div>
                 <div class="info-item">
-                    <i class="bi bi-message"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <p>Guédiawaye,Dakar,Senegale</p>
                 </div>
                 <div class="info-item">
-                    <i class="bi bi-location"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <i class="bi bi-envelope"></i>
+                    <p>barryAlhassane476@gmail.com</p>
                 </div>
             </div>
             <div class="form">
@@ -218,14 +416,31 @@
     <footer>
         <h2>Barry</h2>
         <div class="separator"></div>
+        
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#apropos">Apropos de moi</a></li>
+                    <li><a href="#parcours">Mon Parcours</a></li>
+                    <li><a href="#competances">Compétances</a></li>
+                    <li><a href="#servicees">Services</a></li>
+                    <li><a href="#realisations">Mes realisations</a></li>
+                    <li><a href="#contact-moi">Contact</a></li>
+    
+                </ul>
+                <div class="icons" id="icons"></div>
+            </nav>
+        </div>
         <h3>Mes reseaux sociaux</h3>
         <div class="icons-footer">
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-linkedin"></i>
-            <i class="bi bi-whatsapp"></i>
+            <a href="https://www.facebook.com/profile.php?id=61556478706677"><i class="bi bi-facebook"></i></a>
+            <a href="http://github/legrandde"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/alhassane-barry-71116728b"><i class="bi bi-linkedin"></i></a>
+            
         </div>
+        <p>&copy;2025 Tous drois reserver | Propulsé par barry tech solutions</p>
     </footer>
-
+    
 </body>
 </html>
